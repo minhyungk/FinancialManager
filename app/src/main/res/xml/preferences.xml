@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--below line is to create preference category-->
+    <PreferenceCategory android:title="General">
+
+
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="hideProduct"
+            android:title="Hide Product Data" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="hideCategory"
+            android:title="Hide Category Data" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="hidePrice"
+            android:title="Hide Price Data" />
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Network">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="autoSync"
+            android:title="Automatic Sync" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

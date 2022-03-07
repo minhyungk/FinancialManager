@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.GroupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textViewGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="General"
+        android:textColor="#12c4b9"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProduct"
+        app:layout_constraintStart_toStartOf="@id/textViewProduct"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <TextView
+        android:id="@+id/textViewProduct"
+        android:layout_width="230dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Hide Product Data"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCategory2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="44dp"/>
+
+    <TextView
+        android:id="@+id/textViewProduct2"
+        android:layout_width="226dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Hides product data when shared"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCategory"
+        app:layout_constraintStart_toStartOf="@+id/textViewProduct" />
+
+    <Switch
+        android:id="@+id/hideProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewProduct"
+        app:layout_constraintTop_toTopOf="@+id/textViewProduct" />
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="230dp"
+        android:layout_height="34dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Hide Category Data"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewProduct2"
+        app:layout_constraintTop_toTopOf="@+id/hideCategory" />
+
+    <TextView
+        android:id="@+id/textViewCategory2"
+        android:layout_width="226dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Hides category data when shared"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPrice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/hideCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/textViewCategory"
+        app:layout_constraintTop_toBottomOf="@+id/hideProduct" />
+
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="230dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Hide Price Data"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCategory2"
+        app:layout_constraintTop_toTopOf="@+id/hidePrice" />
+
+    <TextView
+        android:id="@+id/textViewPrice2"
+        android:layout_width="226dp"
+        android:layout_height="29dp"
+        android:fontFamily="sans-serif"
+        android:text="Hides price data when shared"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrice" />
+
+    <Switch
+        android:id="@+id/hidePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrice"
+        app:layout_constraintTop_toBottomOf="@+id/hideCategory" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="192dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FinancialManager</string>
+    <string name="Input">Input</string>
+    <string name="List">List</string>
+    <string name="Chart">Chart</string>
+    <string name="Group">Group</string>
+    <string name="Setting">Setting</string>
+
+    <string name="button_send">Send</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firebaseURL">https://financial-manager-5857a-default-rtdb.asia-southeast1.firebasedatabase.app/</string>
+
+</resources>

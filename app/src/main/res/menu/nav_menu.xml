@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id='@+id/inputFragment'
+        android:icon='@drawable/ic_baseline_input_24'
+        android:title='@string/Input'
+        />
+    <item
+        android:id='@+id/listFragment'
+        android:icon='@drawable/ic_baseline_format_list_bulleted_24'
+        android:title='@string/List'
+        />
+    <item
+        android:id='@+id/chartFragment'
+        android:icon='@drawable/ic_baseline_pie_chart_24'
+        android:title='@string/Chart'
+        />
+    <item
+        android:id='@+id/groupFragment'
+        android:icon='@drawable/ic_baseline_group_24'
+        android:title='@string/Group'
+        />
+    <item
+        android:id='@+id/settingFragment'
+        android:icon='@drawable/ic_baseline_settings_24'
+        android:title='@string/Setting'
+        />
+
+</menu>
